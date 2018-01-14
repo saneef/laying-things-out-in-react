@@ -5,17 +5,22 @@ import Wrapper from "./Wrapper";
 import Stat from "./Stat";
 import Columnizer from "./Columnizer";
 
+const H2 = styled.h2`
+  color: gray;
+  margin-bottom: .5em;
+`;
+
 export default () => {
   return (
     <Wrapper>
-      <h2>Showing some stats</h2>
+      <H2>Showing some stats</H2>
       <Columnizer>
         <Stat label="Likes" value={290} />
         <Stat label="Views" value={2290} />
         <Stat label="Shares" value={39} />
       </Columnizer>
 
-      <h2>Or, just some paragraphs</h2>
+      <H2>Or, just some paragraphs</H2>
       <Columnizer>
         <p>
           A professional case of great gravity was engaging my own attention at
@@ -29,7 +34,7 @@ export default () => {
           little mystery.
         </p>
       </Columnizer>
-      <h2>Or, may be with different gutter</h2>
+      <H2>Or, may be with different gutter</H2>
       <Columnizer gutter="2em">
         <ol style={{ paddingLeft: "1em" }}>
           <li>A some what longer sentence to check the gutter.</li>

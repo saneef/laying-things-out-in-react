@@ -5,6 +5,7 @@ const Column = styled.div`
   float: left;
   width: ${props => props.width};
   padding-left: ${props => props.gutter};
+  margin: 0;
 `;
 
 Column.defaultProps = {
