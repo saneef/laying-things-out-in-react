@@ -1,16 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 
 const styles = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center',
+  fontFamily: "-apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif"
 };
 
 const App = () => (
   <div style={styles}>
-    <Hello name="CodeSandbox" />
-    <h2>Start editing to see some magic happen {'\u2728'}</h2>
+    <h1>Laying things out in React</h1>    
   </div>
 );
 
