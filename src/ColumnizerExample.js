@@ -31,17 +31,17 @@ export default () => {
       </Columnizer>
       <h2>Or, may be with different gutter</h2>
       <Columnizer gutter="2em">
-        <ol style={{paddingLeft: '1em'}}>
+        <ol style={{ paddingLeft: "1em" }}>
           <li>A some what longer sentence to check the gutter.</li>
           <li>A some what longer sentence to check the gutter.</li>
           <li>A some what longer sentence to check the gutter.</li>
         </ol>
-        <ol style={{ paddingLeft: '1em' }}>
+        <ol style={{ paddingLeft: "1em" }}>
           <li>A some what longer sentence to check the gutter.</li>
           <li>A some what longer sentence to check the gutter.</li>
           <li>A some what longer sentence to check the gutter.</li>
         </ol>
-        <ol style={{ paddingLeft: '1em' }}>
+        <ol style={{ paddingLeft: "1em" }}>
           <li>A some what longer sentence to check the gutter.</li>
           <li>A some what longer sentence to check the gutter.</li>
           <li>A some what longer sentence to check the gutter.</li>
