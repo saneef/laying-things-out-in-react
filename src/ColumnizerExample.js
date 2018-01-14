@@ -4,18 +4,19 @@ import styled from "styled-components";
 import Stat from "./Stat";
 import Columnizer from "./Columnizer";
 
-const Stats = styled.div`font-family: sans-serif;`;
+const ColumnizerExample = styled.div`font-family: sans-serif;`;
 
 export default () => {
   return (
-    <Stats>
+    <ColumnizerExample>
+      <h2>Showing some stats</h2>
       <Columnizer gutter="0.5em">
         <Stat label="Likes" value={290} />
         <Stat label="Views" value={2290} />
         <Stat label="Shares" value={39} />
       </Columnizer>
 
-      <h2>Or, some paragraphs</h2>
+      <h2>Or, just some paragraphs</h2>
       <Columnizer gutter="1em">
         <p>
           A professional case of great gravity was engaging my own attention at
@@ -29,6 +30,6 @@ export default () => {
           little mystery.
         </p>
       </Columnizer>
-    </Stats>
+    </ColumnizerExample>
   );
 };
