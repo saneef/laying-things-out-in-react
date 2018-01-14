@@ -1,23 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
+import Wrapper from "./Wrapper";
 import Stat from "./Stat";
 import Columnizer from "./Columnizer";
 
-const ColumnizerExample = styled.div`font-family: sans-serif;`;
-
 export default () => {
   return (
-    <ColumnizerExample>
+    <Wrapper>
       <h2>Showing some stats</h2>
-      <Columnizer gutter="0.5em">
+      <Columnizer>
         <Stat label="Likes" value={290} />
         <Stat label="Views" value={2290} />
         <Stat label="Shares" value={39} />
       </Columnizer>
 
       <h2>Or, just some paragraphs</h2>
-      <Columnizer gutter="1em">
+      <Columnizer>
         <p>
           A professional case of great gravity was engaging my own attention at
           the time, and the whole of next day I was busy at the bedside of the
@@ -30,6 +29,24 @@ export default () => {
           little mystery.
         </p>
       </Columnizer>
-    </ColumnizerExample>
+      <h2>Or, may be with different gutter</h2>
+      <Columnizer gutter="2em">
+        <ol style={{paddingLeft: '1em'}}>
+          <li>A some what longer sentence to check the gutter.</li>
+          <li>A some what longer sentence to check the gutter.</li>
+          <li>A some what longer sentence to check the gutter.</li>
+        </ol>
+        <ol style={{ paddingLeft: '1em' }}>
+          <li>A some what longer sentence to check the gutter.</li>
+          <li>A some what longer sentence to check the gutter.</li>
+          <li>A some what longer sentence to check the gutter.</li>
+        </ol>
+        <ol style={{ paddingLeft: '1em' }}>
+          <li>A some what longer sentence to check the gutter.</li>
+          <li>A some what longer sentence to check the gutter.</li>
+          <li>A some what longer sentence to check the gutter.</li>
+        </ol>
+      </Columnizer>
+    </Wrapper>
   );
 };

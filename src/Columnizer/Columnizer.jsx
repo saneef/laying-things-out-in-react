@@ -36,11 +36,11 @@ const Columnizer = ({ className, children, gutter }) => {
 };
 
 Columnizer.defaultProps = {
-  gutter: "0"
+  gutter: ".5em"
 };
 
 export default styled(Columnizer)`
-  margin-left: -${props => props.gutter};
+  margin-left: -${props => props.gutter ? props.gutter : '0.5em'};
 
   &,
   & * {
