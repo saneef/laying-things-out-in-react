@@ -27,4 +27,9 @@ const Wrapper= ({className, children}) => {
 
 export default styled(Wrapper)`
   font-family: sans-serif;
+
+  &,
+  * + & {
+    margin-top: 0;
+  }
 `;
