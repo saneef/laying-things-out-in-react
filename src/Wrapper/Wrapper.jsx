@@ -12,6 +12,7 @@ const baseStyles = () => injectGlobal`
 
   html, body {
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   ol {
@@ -26,8 +27,6 @@ const Wrapper= ({className, children}) => {
 }
 
 export default styled(Wrapper)`
-  font-family: sans-serif;
-
   &,
   * + & {
     margin-top: 0;
