@@ -34,7 +34,7 @@ export default () => {
           little mystery.
         </p>
       </Columnizer>
-      <H2>Or, may be with different gutter</H2>
+      <H2>Or, may be with different gutter (2em)</H2>
       <Columnizer gutter="2em">
         <ol>
           <li>A some what longer sentence to check the gutter.</li>

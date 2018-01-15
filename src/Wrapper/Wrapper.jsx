@@ -16,7 +16,8 @@ const baseStyles = () => injectGlobal`
   }
 
   ol {
-    padding-left: 1em;
+    padding-left: 0;
+    list-style-position: inside;
   }
 `;
 
