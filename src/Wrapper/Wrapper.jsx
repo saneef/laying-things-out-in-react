@@ -13,6 +13,10 @@ const baseStyles = () => injectGlobal`
   html, body {
     margin: 0;
   }
+
+  ol {
+    padding-left: 1em;
+  }
 `;
 
 const Wrapper= ({className, children}) => {
