@@ -58,7 +58,7 @@ export default () => {
           </p>
         }
       >
-        <H2>Block with a sidebar on right</H2>
+        <H2>Block with a sidebars on both sides</H2>
         <p>{dummytext}</p>
       </Block>
     </Wrapper>
